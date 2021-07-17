@@ -26,4 +26,5 @@ def NBAccuracy(features_train, labels_train, features_test, labels_test):
     accuracy2 =  accuracy_score(pred, labels_test)
     
     ###### Here you see 2 differents ways for accuracy method
+    ###### Both returns as dict
     return accuracy, accuracy2
