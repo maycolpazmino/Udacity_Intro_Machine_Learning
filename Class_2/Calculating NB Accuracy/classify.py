@@ -17,10 +17,13 @@ def NBAccuracy(features_train, labels_train, features_test, labels_test):
     ### this is slightly different than the example, 
     ### where we just print the accuracy
     ### you might need to import an sklearn module
+    
+    ###### With the method .score of library sklearn.naive_bayes
     accuracy = clf.score(features_test, labels_test)
     
+    ###### Import from sklearn.metrics the method accuracy_score
     from sklearn.metrics import accuracy_score
     accuracy2 =  accuracy_score(pred, labels_test)
-    #print(accuracy_score(pred, labels_test))
     
+    ###### Here you see 2 differents ways for accuracy method
     return accuracy, accuracy2
